@@ -1,0 +1,10 @@
+
+    // vector<vector<int>> dp(n+1,vector<int>(k+1,0));
+    // dp[0][0] = 1; // true, we can create 0 sum with 0 elements
+    // f(i,1,n+1){
+    //     f(j,0,k+1){
+    //         dp[i][j] |= dp[i-1][j]; //do not pick the element- if we can create sum j till i-1th index, so can we till ith index
+    //         if(j-a[i-1] >= 0) dp[i][j] |= dp[i-1][j-a[i-1]]; // pick the element 
+    //     }
+    // }
+    

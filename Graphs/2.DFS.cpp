@@ -31,6 +31,6 @@ int main()
     }
 }
 
-//SC- O(3N)- stack space + visisted array + bfs (extra space)
+//SC- O(3N)- stack space + visisted array + dfs (extra space)
 //TC- O(N) + O(2E) for undirected graph, O(N) + O(E) for directed graph. 
 // for each node the loop runs for N = degree of that node. So, in total it runs for summation of degrees, which is 2*E. Also, N recursive calls are made.

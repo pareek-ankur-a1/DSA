@@ -13,6 +13,7 @@ vector<int> dijkstra(vector<vector<pair<int, int>>> &adj, int src) {
         int dis = pq.top().first;
         int node = pq.top().second;
         pq.pop();
+        if(dis > dist[node]) continue;
         for(auto x : adj[node]){
             int edgeweight = x.second;
             int adjnode = x.first;
